@@ -24,6 +24,7 @@ void make_passcode(int k, int idx)
             cout << pc << "\n";
         return;
     }
+
     for (int i = idx; i < c; i++) {
         passcode[k] = alpha[i];
         make_passcode(k + 1, i + 1);
@@ -31,14 +32,12 @@ void make_passcode(int k, int idx)
 }
 int main()
 {
-
     cin >> l >> c;
     for (int i = 0; i < c; i++) {
         cin >> alpha[i];
     }
 
     sort(alpha, alpha + c);
-
     make_passcode(0, 0);
 
     return 0;
