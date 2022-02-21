@@ -10,7 +10,6 @@ int dy[] = { 0, 0, -1, 1 };
 
 int getMinPath()
 {
-
     queue<pii> q;
     q.push({ 0, 0 });
 
@@ -32,8 +31,8 @@ int getMinPath()
 }
 int main()
 {
-
     cin >> N >> M;
+
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < M; j++) {
             scanf("%1d", &maze[i][j]);
